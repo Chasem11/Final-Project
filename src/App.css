@@ -5,18 +5,142 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* General resets for body */
+body, h1, p {
+  margin: 0;
+  padding: 0;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+body {
+  font-family: 'Arial', sans-serif; /* You can choose a better font */
+  background-color: #F9FAFB;
+  color: #111827; /* Dark gray - mostly for text */
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+/* Container for the whole app to give some padding around */
+.app-container {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 1200px; /* Or your preferred max width */
 }
+
+/* Navbar styles */
+.navbar {
+  position: fixed; /* Fixed position */
+  top: 0; /* Stick to the top */
+  left: 0; /* Align to the left side */
+  width: 100%; /* Span the full width of the screen */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #10B981; /* Tailwind CSS Emerald 600 */
+  padding: 1rem 2rem;
+  z-index: 1000; /* Ensure navbar is above other content */
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* Optional: adds shadow for better separation */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 2rem; /* Adjust as needed */
+}
+
+.navbar-links {
+  margin-right: 2rem; /* Adjust this to control space on the right */
+}
+
+.navbar-links a {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: #059669; /* Tailwind CSS Emerald 700 */
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.navbar-links a:hover {
+  background-color: #047857; /* Tailwind CSS Emerald 800 */
+}
+body, h1, p, button, input {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; /* Choose your preferred font */
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Make anchor tags inherit color from parent */
+}
+
+/* App container to center content */
+.app-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Posts list styles */
+.posts-list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.post-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb; /* Light grey border */
+  border-radius: 8px; /* Rounded corners for the card */
+  margin-bottom: 20px; /* Space between cards */
+  padding: 20px; /* Padding inside the cards */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  width: 200%; /* Take full width */
+}
+
+.post-meta {
+  color: #6B7280; /* Grey text for meta info like time posted */
+  margin-bottom: 8px;
+  font-size: 0.875rem; /* Smaller font size for meta info */
+}
+
+.post-title {
+  font-size: 1.25rem; /* Larger font size for titles */
+  font-weight: bold;
+  color: #111827; /* Darker text for titles */
+  margin-bottom: 8px;
+}
+
+.post-upvotes {
+  font-size: 0.875rem; /* Small font size for upvotes */
+  color: #10B981; /* Color for the upvote count */
+  font-weight: bold;
+}
+
+/* Filter styles */
+.filter-container {
+  display: flex;
+  justify-content: center; /* Center the filters */
+  margin-bottom: 20px; /* Space between filters and post list */
+}
+
+.filter-btn {
+  background-color: #D1FAE5; /* Light green background */
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 20px; /* Rounded pill shape */
+  cursor: pointer;
+  font-weight: bold;
+  outline: none; /* Remove focus outline */
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background-color: #10B981; /* Darker green for active/hover state */
+  color: white;
+}
+
+
 
 @keyframes logo-spin {
   from {
@@ -33,10 +157,3 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Components/Home';
+import PostDetail from './Components/PostDetail';
+import CreatePost from './Components/CreatePost';
+import Nav from './Components/Nav';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="app-container">
+      <Router>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} /> {/* Use element instead of component */}
+          <Route path="/post/:id" element={<PostDetail />} /> {/* Use element instead of component */}
+          <Route path="/create" element={<CreatePost />} /> {/* Use element instead of component */}
+        </Routes>
+      </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;
+
