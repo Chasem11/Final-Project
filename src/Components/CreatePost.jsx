@@ -18,12 +18,29 @@ function CreatePost() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" value={title} onChange={e => setTitle(e.target.value)} placeholder="Title" required />
-      <textarea value={caption} onChange={e => setContent(e.target.value)} placeholder="Caption"></textarea>
-      <button type="submit">Create Post</button>
-    </form>
+    <div className="create-post-container">
+      <form onSubmit={handleSubmit} className="create-post-form">
+        {/* Optional label: <label className="create-post-label" htmlFor="title">Title</label> */}
+        <input
+          type="text"
+          value={title}
+          onChange={e => setTitle(e.target.value)}
+          placeholder="Title"
+          className="create-post-input"
+          required
+        />
+        {/* Optional label: <label className="create-post-label" htmlFor="caption">Caption</label> */}
+        <textarea
+          value={caption}
+          onChange={e => setContent(e.target.value)}
+          placeholder="Caption"
+          className="create-post-textarea"
+        />
+        <button type="submit" className="create-post-submit">Create Post</button>
+      </form>
+    </div>
   );
 }
 
 export default CreatePost;
+

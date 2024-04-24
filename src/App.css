@@ -84,8 +84,9 @@ a {
 
 /* Posts list styles */
 .posts-list {
-  list-style-type: none; /* Remove default list styling */
+  list-style-type: none; 
   padding: 0;
+  
 }
 
 .post-card {
@@ -139,6 +140,134 @@ a {
   background-color: #10B981; /* Darker green for active/hover state */
   color: white;
 }
+
+/* CreatePost styles */
+.create-post-container {
+  max-width: 600px; /* Max width for the form */
+  margin: 40px auto; /* Center the form with margin */
+  padding: 20px;
+  background: #ffffff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.create-post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-post-input,
+.create-post-textarea {
+  border: 1px solid #e5e7eb; /* Light grey border */
+  border-radius: 4px;
+  margin-bottom: 20px; /* Space between inputs */
+  padding: 10px; /* Padding inside inputs */
+  font-size: 16px; /* Larger font size for better readability */
+}
+
+.create-post-textarea {
+  min-height: 150px; /* Minimum height for the textarea */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.create-post-submit {
+  padding: 10px 20px;
+  background-color: #10B981; /* Tailwind CSS Emerald 600 */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.create-post-submit:hover {
+  background-color: #059669; /* Tailwind CSS Emerald 700 for hover */
+}
+
+/* Add styles for labels if you decide to include them */
+.create-post-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.post-detail-container {
+  max-width: 800px;
+  margin: 4rem auto 2rem; /* Add top margin to account for fixed navbar, auto centers the container, small bottom margin */
+  padding: 2rem;
+  background-color: #fff; /* Assuming a white background */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.post-image {
+  max-width: 100%; /* Ensure the image is responsive and does not overflow its container */
+  border-radius: 8px; /* Optionally rounded corners for the image */
+  margin-bottom: 1rem; /* Space between image and text */
+}
+
+.post-title {
+  font-size: 1.5rem; /* Large font size for the post title */
+  margin-bottom: 0.5rem; /* Space between title and caption */
+  color: #333; /* Dark color for the text */
+}
+
+.post-caption {
+  font-size: 1rem; /* Font size for the caption */
+  margin-bottom: 1rem; /* Space between caption and upvote/comment section */
+}
+
+.upvote-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; /* Space between upvotes and comments */
+}
+
+.upvote-button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  margin-right: 0.5rem;
+}
+
+.upvote-count {
+  font-weight: bold;
+}
+
+.comment-section {
+  border-top: 1px solid #eaeaea; /* Light border for separation */
+  padding-top: 1rem; /* Space between border and first comment */
+}
+
+.comment {
+  padding: 0.5rem 0; /* Padding for individual comments */
+  border-bottom: 1px solid #eaeaea; /* Light border between comments */
+}
+
+.comment:last-child {
+  border-bottom: none; /* Remove border from the last comment */
+}
+
+.comment-input {
+  width: 100%; /* Full width input field */
+  padding: 0.5rem; /* Padding inside input */
+  margin-top: 1rem; /* Space between comments and input field */
+  margin-bottom: 1rem; /* Space between input field and submit button */
+  border: 1px solid #eaeaea; /* Light border for the input */
+  border-radius: 4px; /* Slightly rounded corners for the input */
+}
+
+.comment-submit {
+  cursor: pointer;
+  background-color: #10B981;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+
+
 
 
 
