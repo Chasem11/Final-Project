@@ -7,7 +7,6 @@ function Post({ post, formatTimeAgo }) {
         <div className="post-meta">Posted {formatTimeAgo(new Date(post.created_at), { addSuffix: true })}</div>
         <Link to={`/post/${post.id}`} className="post-title">{post.title}</Link>
         <div className="post-upvotes">{post.up_votes} upvotes</div>
-        {/* If you have more post details add them here */}
       </li>
     );
   }

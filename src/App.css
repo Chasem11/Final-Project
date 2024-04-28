@@ -234,37 +234,135 @@ a {
   font-weight: bold;
 }
 
-.comment-section {
-  border-top: 1px solid #eaeaea; /* Light border for separation */
-  padding-top: 1rem; /* Space between border and first comment */
+/* Style for edit inputs and textarea */
+.edit-input, .edit-textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.comment {
-  padding: 0.5rem 0; /* Padding for individual comments */
-  border-bottom: 1px solid #eaeaea; /* Light border between comments */
-}
-
-.comment:last-child {
-  border-bottom: none; /* Remove border from the last comment */
-}
-
-.comment-input {
-  width: 100%; /* Full width input field */
-  padding: 0.5rem; /* Padding inside input */
-  margin-top: 1rem; /* Space between comments and input field */
-  margin-bottom: 1rem; /* Space between input field and submit button */
-  border: 1px solid #eaeaea; /* Light border for the input */
-  border-radius: 4px; /* Slightly rounded corners for the input */
-}
-
-.comment-submit {
+/* Style for save changes button */
+.save-changes-btn {
+  padding: 10px 20px;
+  color: white;
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  background-color: #10B981;
+  font-size: 16px;
+}
+
+.save-changes-btn:hover {
+  background-color: #45a049; /* Darker shade on hover */
+}
+
+
+/* Style for the entire comment section */
+.comment-section {
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Style for individual comments */
+.comment {
+  padding: 8px;
+  margin-top: 5px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Style for comment input */
+.comment-input {
+  width: calc(100% - 22px); /* Full width minus padding */
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for submit button */
+.comment-submit {
+  padding: 10px 20px;
+  color: white;
+  background-color: #007BFF; /* Bootstrap blue */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.comment-submit:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for upvote button */
+.upvote-button {
+  padding: 10px;
+  background-color: #ff4500; /* Reddit-like orange */
   color: white;
   border: none;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
+
+.upvote-button:hover {
+  background-color: #e03616; /* Darker orange on hover */
+}
+
+/* Style for upvote count */
+.upvote-count {
+  margin-left: 10px;
+  font-size: 16px;
+}
+/* Style for the form containing the comment box */
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Style for the textarea where users type their comment */
+.comment-textarea {
+  width: 85%; /* Full-width of the container */
+  height: 100px; /* Set a fixed height */
+  padding: 10px; /* Padding inside the text box */
+  border: 1px solid #ccc; /* Subtle border color */
+  border-radius: 8px; /* Rounded corners */
+  resize: none; /* Disable resizing */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for interactions */
+}
+
+/* Style when user focuses on textarea */
+.comment-textarea:focus {
+  border-color: #007BFF; /* Highlight border when focused */
+  box-shadow: 0 0 8px rgba(0,123,255,0.25); /* More pronounced shadow when focused */
+  outline: none; /* Remove default outline */
+}
+
+/* Style for the submit button below the textarea */
+.submit-comment-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF; /* Bootstrap blue for consistency */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the submit button */
+.submit-comment-btn:hover {
+  background-color: #0056b3; /* A darker blue on hover */
+}
+
 
 
 

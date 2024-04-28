@@ -20,7 +20,6 @@ function CreatePost() {
   return (
     <div className="create-post-container">
       <form onSubmit={handleSubmit} className="create-post-form">
-        {/* Optional label: <label className="create-post-label" htmlFor="title">Title</label> */}
         <input
           type="text"
           value={title}
@@ -29,7 +28,6 @@ function CreatePost() {
           className="create-post-input"
           required
         />
-        {/* Optional label: <label className="create-post-label" htmlFor="caption">Caption</label> */}
         <textarea
           value={caption}
           onChange={e => setContent(e.target.value)}
