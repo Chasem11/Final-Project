@@ -118,6 +118,7 @@ function PostDetail() {
             <span className="upvote-count">{post.up_votes} upvotes</span>
           </div>
           <div className="comment-section">
+            <h2>Comments</h2>
             {comments.map(comment => (
               <div key={comment.id} className="comment">{comment.comment}</div>
             ))}

@@ -6,13 +6,18 @@ import { formatDistanceToNow } from 'date-fns';
 function Home() {
   const [posts, setPosts] = useState([]);
   const [activeFilter, setActiveFilter] = useState('Newest'); 
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetchPosts();
-  }, [activeFilter]); 
+    fetchPosts();  
+  }, [activeFilter, searchTerm]); 
 
   const fetchPosts = async () => {
     let query = supabase.from('Posts').select('*');
+
+    if (searchTerm) {
+      query = query.ilike('title', `%${searchTerm}%`);
+    }
 
     if (activeFilter === 'Most Popular') {
       query = query.order('up_votes', { ascending: false }); 
@@ -33,6 +38,10 @@ function Home() {
     setActiveFilter(filter); 
   };
 
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value); 
+  };
+
   return (
     <div className="app-container">
       <div className="filter-container">
@@ -48,6 +57,13 @@ function Home() {
         >
           Most Popular
         </button>
+        <input
+          type="text"
+          placeholder="Search by title..."
+          value={searchTerm}
+          onChange={handleSearchChange}
+          className="search-bar"
+        />
       </div>
       <ul className="posts-list">
         {posts.map(post => (

@@ -5,49 +5,46 @@
   text-align: center;
 }
 
-/* General resets for body */
 body, h1, p {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Arial', sans-serif; /* You can choose a better font */
+  font-family: 'Arial', sans-serif; 
   background-color: #F9FAFB;
-  color: #111827; /* Dark gray - mostly for text */
+  color: #111827; 
 }
 
-/* Container for the whole app to give some padding around */
 .app-container {
   margin: 0 auto;
   padding: 0 2rem;
-  max-width: 1200px; /* Or your preferred max width */
+  max-width: 1200px; 
 }
 
-/* Navbar styles */
 .navbar {
-  position: fixed; /* Fixed position */
-  top: 0; /* Stick to the top */
-  left: 0; /* Align to the left side */
-  width: 100%; /* Span the full width of the screen */
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #10B981; /* Tailwind CSS Emerald 600 */
+  background-color: #007BFF; 
   padding: 1rem 2rem;
-  z-index: 1000; /* Ensure navbar is above other content */
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* Optional: adds shadow for better separation */
+  z-index: 1000; 
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); 
 }
 
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
-  margin-left: 2rem; /* Adjust as needed */
+  margin-left: 2rem; 
 }
 
 .navbar-links {
-  margin-right: 2rem; /* Adjust this to control space on the right */
+  margin-right: 2rem; 
 }
 
 .navbar-links a {
@@ -56,33 +53,32 @@ body {
   text-decoration: none;
   font-weight: bold;
   color: white;
-  background-color: #059669; /* Tailwind CSS Emerald 700 */
+  background-color: #059669; 
   border-radius: 0.5rem;
   transition: background-color 0.3s;
 }
 
 .navbar-links a:hover {
-  background-color: #047857; /* Tailwind CSS Emerald 800 */
+  background-color: #047857; 
 }
 body, h1, p, button, input {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif; /* Choose your preferred font */
+  font-family: 'Arial', sans-serif; 
 }
 
 a {
   text-decoration: none;
-  color: inherit; /* Make anchor tags inherit color from parent */
+  color: inherit; 
 }
 
-/* App container to center content */
+
 .app-container {
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Posts list styles */
 .posts-list {
   list-style-type: none; 
   padding: 0;
@@ -91,64 +87,63 @@ a {
 
 .post-card {
   background-color: #ffffff;
-  border: 1px solid #e5e7eb; /* Light grey border */
-  border-radius: 8px; /* Rounded corners for the card */
-  margin-bottom: 20px; /* Space between cards */
-  padding: 20px; /* Padding inside the cards */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-  width: 200%; /* Take full width */
+  border: 1px solid #e5e7eb; 
+  border-radius: 8px; 
+  margin-bottom: 20px; 
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 200%;
 }
 
 .post-meta {
-  color: #6B7280; /* Grey text for meta info like time posted */
+  color: #6B7280; 
   margin-bottom: 8px;
-  font-size: 0.875rem; /* Smaller font size for meta info */
+  font-size: 0.875rem; 
 }
 
 .post-title {
-  font-size: 1.25rem; /* Larger font size for titles */
+  font-size: 1.25rem; 
   font-weight: bold;
-  color: #111827; /* Darker text for titles */
+  color: #111827; 
   margin-bottom: 8px;
 }
 
 .post-upvotes {
-  font-size: 0.875rem; /* Small font size for upvotes */
-  color: #10B981; /* Color for the upvote count */
+  font-size: 0.875rem; 
+  color: #10B981; 
   font-weight: bold;
 }
 
-/* Filter styles */
 .filter-container {
   display: flex;
-  justify-content: center; /* Center the filters */
-  margin-bottom: 20px; /* Space between filters and post list */
+  justify-content: center; 
+  margin-bottom: 20px; 
 }
 
 .filter-btn {
-  background-color: #D1FAE5; /* Light green background */
+  background-color: #D1FAE5; 
   border: none;
   padding: 10px 20px;
   margin: 0 10px;
-  border-radius: 20px; /* Rounded pill shape */
+  border-radius: 20px; 
   cursor: pointer;
   font-weight: bold;
-  outline: none; /* Remove focus outline */
+  outline: none; 
 }
 
 .filter-btn.active, .filter-btn:hover {
-  background-color: #10B981; /* Darker green for active/hover state */
+  background-color: #10B981; 
   color: white;
 }
 
-/* CreatePost styles */
+
 .create-post-container {
-  max-width: 600px; /* Max width for the form */
-  margin: 40px auto; /* Center the form with margin */
+  max-width: 600px; 
+  margin: 40px auto; 
   padding: 20px;
-  background: #ffffff; /* White background */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow */
+  background: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
 }
 
 .create-post-form {
@@ -158,21 +153,21 @@ a {
 
 .create-post-input,
 .create-post-textarea {
-  border: 1px solid #e5e7eb; /* Light grey border */
+  border: 1px solid #e5e7eb; 
   border-radius: 4px;
-  margin-bottom: 20px; /* Space between inputs */
-  padding: 10px; /* Padding inside inputs */
-  font-size: 16px; /* Larger font size for better readability */
+  margin-bottom: 20px; 
+  padding: 10px; 
+  font-size: 16px; 
 }
 
 .create-post-textarea {
-  min-height: 150px; /* Minimum height for the textarea */
-  resize: vertical; /* Allow vertical resizing */
+  min-height: 150px; 
+  resize: vertical;
 }
 
 .create-post-submit {
   padding: 10px 20px;
-  background-color: #10B981; /* Tailwind CSS Emerald 600 */
+  background-color: #10B981; 
   color: white;
   border: none;
   border-radius: 4px;
@@ -182,10 +177,9 @@ a {
 }
 
 .create-post-submit:hover {
-  background-color: #059669; /* Tailwind CSS Emerald 700 for hover */
+  background-color: #059669; 
 }
 
-/* Add styles for labels if you decide to include them */
 .create-post-label {
   font-weight: bold;
   margin-bottom: 5px;
@@ -193,34 +187,34 @@ a {
 
 .post-detail-container {
   max-width: 800px;
-  margin: 4rem auto 2rem; /* Add top margin to account for fixed navbar, auto centers the container, small bottom margin */
+  margin: 4rem auto 2rem; 
   padding: 2rem;
-  background-color: #fff; /* Assuming a white background */
-  border-radius: 10px; /* Rounded corners for the container */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .post-image {
-  max-width: 100%; /* Ensure the image is responsive and does not overflow its container */
-  border-radius: 8px; /* Optionally rounded corners for the image */
-  margin-bottom: 1rem; /* Space between image and text */
+  max-width: 100%;
+  border-radius: 8px; 
+  margin-bottom: 1rem; 
 }
 
 .post-title {
-  font-size: 1.5rem; /* Large font size for the post title */
-  margin-bottom: 0.5rem; /* Space between title and caption */
-  color: #333; /* Dark color for the text */
+  font-size: 1.5rem; 
+  margin-bottom: 0.5rem; 
+  color: #333; 
 }
 
 .post-caption {
-  font-size: 1rem; /* Font size for the caption */
-  margin-bottom: 1rem; /* Space between caption and upvote/comment section */
+  font-size: 1rem; 
+  margin-bottom: 1rem; 
 }
 
 .upvote-section {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem; /* Space between upvotes and comments */
+  margin-bottom: 1rem; 
 }
 
 .upvote-button {
@@ -234,7 +228,6 @@ a {
   font-weight: bold;
 }
 
-/* Style for edit inputs and textarea */
 .edit-input, .edit-textarea {
   width: 100%;
   padding: 8px;
@@ -243,11 +236,10 @@ a {
   border-radius: 4px;
 }
 
-/* Style for save changes button */
 .save-changes-btn {
   padding: 10px 20px;
   color: white;
-  background-color: #4CAF50; /* Green background */
+  background-color: #4CAF50; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -255,18 +247,16 @@ a {
 }
 
 .save-changes-btn:hover {
-  background-color: #45a049; /* Darker shade on hover */
+  background-color: #45a049; 
 }
 
 
-/* Style for the entire comment section */
 .comment-section {
-  background-color: #f2f2f2; /* Light gray background */
+  background-color: #f2f2f2; 
   padding: 15px;
   border-radius: 8px;
 }
 
-/* Style for individual comments */
 .comment {
   padding: 8px;
   margin-top: 5px;
@@ -275,20 +265,18 @@ a {
   border-radius: 4px;
 }
 
-/* Style for comment input */
 .comment-input {
-  width: calc(100% - 22px); /* Full width minus padding */
+  width: calc(100% - 22px); 
   padding: 10px;
   margin-top: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-/* Style for submit button */
 .comment-submit {
   padding: 10px 20px;
   color: white;
-  background-color: #007BFF; /* Bootstrap blue */
+  background-color: #007BFF; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -296,13 +284,12 @@ a {
 }
 
 .comment-submit:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; 
 }
 
-/* Style for upvote button */
 .upvote-button {
   padding: 10px;
-  background-color: #ff4500; /* Reddit-like orange */
+  background-color: #ff4500; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -311,15 +298,15 @@ a {
 }
 
 .upvote-button:hover {
-  background-color: #e03616; /* Darker orange on hover */
+  background-color: #e03616; 
 }
 
-/* Style for upvote count */
+
 .upvote-count {
   margin-left: 10px;
   font-size: 16px;
 }
-/* Style for the form containing the comment box */
+
 .comment-form {
   display: flex;
   flex-direction: column;
@@ -327,30 +314,30 @@ a {
   margin-top: 10px;
 }
 
-/* Style for the textarea where users type their comment */
+
 .comment-textarea {
-  width: 85%; /* Full-width of the container */
-  height: 100px; /* Set a fixed height */
-  padding: 10px; /* Padding inside the text box */
-  border: 1px solid #ccc; /* Subtle border color */
-  border-radius: 8px; /* Rounded corners */
-  resize: none; /* Disable resizing */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
-  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for interactions */
+  width: 85%; 
+  height: 100px; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  resize: none; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  transition: border-color 0.3s, box-shadow 0.3s; 
 }
 
-/* Style when user focuses on textarea */
+
 .comment-textarea:focus {
-  border-color: #007BFF; /* Highlight border when focused */
-  box-shadow: 0 0 8px rgba(0,123,255,0.25); /* More pronounced shadow when focused */
-  outline: none; /* Remove default outline */
+  border-color: #007BFF; 
+  box-shadow: 0 0 8px rgba(0,123,255,0.25); 
+  outline: none; 
 }
 
-/* Style for the submit button below the textarea */
+
 .submit-comment-btn {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007BFF; /* Bootstrap blue for consistency */
+  background-color: #007BFF; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -358,9 +345,9 @@ a {
   transition: background-color 0.3s;
 }
 
-/* Hover effect for the submit button */
+
 .submit-comment-btn:hover {
-  background-color: #0056b3; /* A darker blue on hover */
+  background-color: #0056b3; 
 }
 
 
